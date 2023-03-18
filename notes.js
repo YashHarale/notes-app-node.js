@@ -1,3 +1,4 @@
+//File systems
 const fs = require('fs')
 const chalk = require('chalk')
 
@@ -17,8 +18,6 @@ const addNote = (title, body) => {
         console.log(chalk.red.inverse('Note title taken!'))
     }
 }
-
-
 
 const removeNote = (title) => {
 
@@ -41,7 +40,7 @@ const listNotes = () => {
     console.log(chalk.inverse("Your notes"))
 
     notes.forEach((note) => {
-        console.log(note.title, "--" , note.body)
+        console.log(note.title, "---" , note.body)
     })
     
 }
